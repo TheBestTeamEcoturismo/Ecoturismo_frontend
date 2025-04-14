@@ -1,9 +1,9 @@
 import { useForm } from 'react-hook-form';
 import Button from '../button/Button';
 import './FormRegister.css';
-import useTogglePassword from '../../hooks/UseTooglePassword';
+import useTogglePassword from '../../hooks/UseTogglePassword';
 import useImagePreview from '../../Hooks/UseImagePreview';
-import { registerUser } from '../../reducers/users/Users.action';
+import { registerUser } from '../../reducers/users/usersAction';
 
 const FormRegister = ({ navigate, dispatch }) => {
   const { showPassword, tooglePassword } = useTogglePassword();

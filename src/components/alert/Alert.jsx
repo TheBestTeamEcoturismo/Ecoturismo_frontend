@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import Button from '../button/Button';
 import './Alert.css';
 import { useNavigate } from 'react-router-dom';
-import useUserState from '../../hooks/UseUserState';
-import { logout } from '../../reducers/users/Users.action';
+import useUserState from '../../hooks/useUserState';
+import { logout } from '../../reducers/users/usersAction';
 
 const Alert = ({ message }) => {
   const [showAlert, setShowAlert] = useState(true);

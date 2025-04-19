@@ -1,0 +1,19 @@
+.loading__container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(250, 250, 250, 0.8);
+  backdrop-filter: blur(20px);
+  z-index: 9999999999999;
+}
+
+.loading__container > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}

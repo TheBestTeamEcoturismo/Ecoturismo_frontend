@@ -1,0 +1,35 @@
+.filter {
+  width: 100%;
+  background-color: var(--eco-bg-tertiary);
+  border: 1px solid var(--eco-bg-borders);
+  border-radius: var(--eco-br-primary);
+  display: flex;
+  flex-direction: column;
+  gap: var(--eco-spacing-m);
+  padding: var(--eco-spacing-s);
+  max-width: 900px;
+  position: relative;
+}
+
+.filter > div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .filter {
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 160px;
+  }
+
+  .filter > button {
+    position: absolute;
+    bottom: 10px;
+    width: 95%;
+  }
+
+  .filter > div {
+    width: 500px;
+  }
+}

@@ -1,4 +1,4 @@
-import { API } from '../../api/Api';
+import { API } from '../../api/api';
 
 export async function checkSesion({ dispatch }) {
   try {

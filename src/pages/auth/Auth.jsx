@@ -1,6 +1,5 @@
 import './Auth.css';
 import FormAuth from '../../components/formAuth/FormAuth';
-import useAppState from '../../hooks/UseLoadingState';
 import Alert from '../../components/alert/Alert';
 import useUserState from '../../hooks/UseUserState';
 

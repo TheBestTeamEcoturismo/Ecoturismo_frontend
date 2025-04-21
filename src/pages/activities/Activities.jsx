@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 
-import useActivitiesState from '../../Hooks/useActivitiesState';
 import ListingCards from '../../components/listingCards/ListingCards';
 import { getActivities } from '../../Reducers/Activities/activities.action';
+import useActivitiesState from '../../hooks/useActivitiesState';
 
 const Activities = () => {
   const { state, dispatch } = useActivitiesState();

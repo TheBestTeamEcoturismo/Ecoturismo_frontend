@@ -1,11 +1,13 @@
 import { useForm } from 'react-hook-form';
-import Button from '../button/Button';
 import './Filter.css';
-import { filterActivities } from '../../reducers/activities/activities.action';
-import useActivitiesState from '../../hooks/useActivitiesState';
+
 import { useNavigate } from 'react-router-dom';
-import useAccommodationState from '../../hooks/useAccommodationsState';
-import { filterAccommodations } from '../../reducers/accommodations/accommodations.action';
+
+import Button from '../Button/Button';
+import { filterActivities } from '../../Reducers/Activities/activities.action';
+import useActivitiesState from '../../Hooks/useActivitiesState';
+import useAccommodationState from '../../Hooks/useAccommodationsState';
+import { filterAccommodations } from '../../Reducers/Accommodations/accommodations.action';
 
 const Filter = () => {
   const navigate = useNavigate();

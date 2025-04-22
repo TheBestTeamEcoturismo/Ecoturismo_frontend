@@ -1,0 +1,19 @@
+.listingCards {
+  min-height: 100svh;
+}
+
+.listingCards > h2 {
+  font-size: 30px;
+  text-align: center;
+  color: var(--eco-color-headings);
+}
+.listingCards > div {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--eco-spacing-m);
+  margin-top: var(--eco-spacing-xxl);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

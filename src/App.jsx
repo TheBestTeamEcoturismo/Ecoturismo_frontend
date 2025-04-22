@@ -7,6 +7,7 @@ import Auth from './pages/auth/Auth';
 import Ecoturismo from './pages/ecoturismo/Ecoturismo';
 import Activities from './pages/activities/Activities';
 import About from './pages/about/About';
+import Home from './pages/home/Home';
 
 function App() {
   const { loading } = useLoadingState();
@@ -15,6 +16,7 @@ function App() {
       {loading && <Loading />}
       <Header />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Auth />} />
         <Route path="/register" element={<Auth />} />
         <Route path="/ecoturismo" element={<Ecoturismo />} />

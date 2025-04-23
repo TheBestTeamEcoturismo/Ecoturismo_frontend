@@ -1,5 +1,4 @@
-import { API } from '../../api/Api';
-
+import { API } from '../../api/api';
 import { formatDate } from '../../utils/formatDate';
 import { isEntryDateValid } from '../../utils/isEntryDateValid';
 import { isExitDateAfterEntry } from '../../utils/isExitDateAfterEntry';

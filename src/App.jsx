@@ -8,6 +8,8 @@ import Ecoturismo from './pages/ecoturismo/Ecoturismo';
 import Activities from './pages/activities/Activities';
 import About from './pages/about/About';
 import Home from './pages/home/Home';
+import Footer from './components/footer/Footer';
+import Activity from './pages/activity/Activity';
 
 function App() {
   const { loading } = useLoadingState();
@@ -22,7 +24,9 @@ function App() {
         <Route path="/ecoturismo" element={<Ecoturismo />} />
         <Route path="/activities" element={<Activities />} />
         <Route path="/about" element={<About />} />
+        <Route path="/activity/:name/:id" element={<Activity />} />
       </Routes>
+      <Footer />
     </>
   );
 }

@@ -10,6 +10,7 @@ import About from './pages/about/About';
 import Home from './pages/home/Home';
 import Footer from './components/footer/Footer';
 import Activity from './pages/activity/Activity';
+import Accommodations from './pages/acommodations/Accommodations';
 
 function App() {
   const { loading } = useLoadingState();
@@ -23,6 +24,7 @@ function App() {
         <Route path="/register" element={<Auth />} />
         <Route path="/ecoturismo" element={<Ecoturismo />} />
         <Route path="/activities" element={<Activities />} />
+        <Route path="/accommodations" element={<Accommodations />} />
         <Route path="/about" element={<About />} />
         <Route path="/activity/:name/:id" element={<Activity />} />
       </Routes>

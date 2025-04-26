@@ -11,6 +11,7 @@ import Home from './pages/home/Home';
 import Footer from './components/footer/Footer';
 import Activity from './pages/activity/Activity';
 import Accommodations from './pages/acommodations/Accommodations';
+import Accommodation from './pages/acommodation/Accommodation';
 
 function App() {
   const { loading } = useLoadingState();
@@ -27,6 +28,7 @@ function App() {
         <Route path="/accommodations" element={<Accommodations />} />
         <Route path="/about" element={<About />} />
         <Route path="/activity/:name/:id" element={<Activity />} />
+        <Route path="/accommodation/:name/:id" element={<Accommodation />} />
       </Routes>
       <Footer />
     </>

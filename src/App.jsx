@@ -12,6 +12,7 @@ import Footer from './components/footer/Footer';
 import Activity from './pages/activity/Activity';
 import Accommodations from './pages/acommodations/Accommodations';
 import Accommodation from './pages/acommodation/Accommodation';
+import Profile from './pages/profile/Profile';
 
 function App() {
   const { loading } = useLoadingState();
@@ -27,6 +28,7 @@ function App() {
         <Route path="/activities" element={<Activities />} />
         <Route path="/accommodations" element={<Accommodations />} />
         <Route path="/about" element={<About />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/activity/:name/:id" element={<Activity />} />
         <Route path="/accommodation/:name/:id" element={<Accommodation />} />
       </Routes>

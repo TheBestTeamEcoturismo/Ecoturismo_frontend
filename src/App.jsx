@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/header/Header';
 import Loading from './components/loading/Loading';
@@ -13,6 +13,7 @@ import Activity from './pages/activity/Activity';
 import Accommodations from './pages/acommodations/Accommodations';
 import Accommodation from './pages/acommodation/Accommodation';
 import Profile from './pages/profile/Profile';
+import Owner from './pages/owner/Owner';
 
 function App() {
   const { loading } = useLoadingState();
@@ -31,6 +32,8 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/activity/:name/:id" element={<Activity />} />
         <Route path="/accommodation/:name/:id" element={<Accommodation />} />
+        <Route path="/owner" element={<Owner />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />
     </>

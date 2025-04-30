@@ -1,7 +1,7 @@
 import './Auth.css';
 import FormAuth from '../../components/formAuth/FormAuth';
 import Alert from '../../components/alert/Alert';
-import useUserState from '../../hooks/UseUserState';
+import useUserState from '../../hooks/useUserState';
 
 const Auth = () => {
   const { state } = useUserState();

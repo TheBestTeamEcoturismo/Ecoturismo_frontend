@@ -1,4 +1,4 @@
-import MyCalendar from '../calendar/MyCalendar';
+import MyCalendar from '../../components/calendar/MyCalendar';
 import './BookingCalendar.css';
 
 const BookingCalendar = ({ reservations }) => {

@@ -14,6 +14,7 @@ import Accommodations from './pages/acommodations/Accommodations';
 import Accommodation from './pages/acommodation/Accommodation';
 import Profile from './pages/profile/Profile';
 import Owner from './pages/owner/Owner';
+import OwnerReservations from './pages/ownerReservation/OwnerReservation';
 
 function App() {
   const { loading } = useLoadingState();
@@ -33,6 +34,7 @@ function App() {
         <Route path="/activity/:name/:id" element={<Activity />} />
         <Route path="/accommodation/:name/:id" element={<Accommodation />} />
         <Route path="/owner" element={<Owner />} />
+        <Route path="/ownerReservations" element={<OwnerReservations />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />

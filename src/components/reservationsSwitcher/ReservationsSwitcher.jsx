@@ -1,4 +1,4 @@
-import OwnerReservationCard from '../ownerReservationCard/OwnerReservationCard';
+import OwnerReservationCard from '../ownerReservationCard/OwnerReservatioCard';
 import './ReservationsSwitcher.css';
 
 const ReservationsSwitcher = ({ reservations, step, setStep }) => {

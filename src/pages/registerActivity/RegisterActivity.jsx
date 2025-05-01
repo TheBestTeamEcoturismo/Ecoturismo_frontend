@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import './RegisterActivity.css';
 import './Step.css';
 import { useForm } from 'react-hook-form';
-import { ActivitiesContext } from '../../Providers/activities/ActivitiesProvider';
+import { ActivitiesContext } from '../../providers/activities/ActivitiesProvider';
 import { createActiviy } from '../../reducers/activities/activities.action';
 import Step1 from './step1/Step1';
 import Step2 from './step2/Step2';

@@ -6,10 +6,10 @@ import { useForm } from 'react-hook-form';
 import Step1 from './Step1/Step1';
 import Step2 from './Step2/Step2';
 import Step3 from './Step3/Step3';
-import { createAccommodation } from '../../reducers/accommodations/accommodations.action';
 import useFormStep from '../../hooks/useFormStep';
 import { stepFieldsAccommodations } from '../../utils/fieldsSteps';
 import Alert from '../../components/alert/Alert';
+import { createAccommodation } from '../../Reducers/Accommodations/accommodations.action';
 
 const RegisterAccommodation = () => {
   const { state, dispatch } = useContext(AccommodationsContext);

@@ -85,7 +85,6 @@ export async function updateAccommodation({ dispatch, id, data }) {
     if (data.contactDetails?.phone) formData.append('contactDetails[phone]', data.contactDetails['phone']);
 
     const response = await API({ method: 'PUT', body: formData, endpoint: `accommodations/updateAccommodation/${id}` });
-    console.log(response);
 
     dispatch({ type: 'UPDATE_ACCOMMODATION', payload: response.accommodation });
     dispatch({ type: 'SHOW_MESSAGE', payload: response.message });

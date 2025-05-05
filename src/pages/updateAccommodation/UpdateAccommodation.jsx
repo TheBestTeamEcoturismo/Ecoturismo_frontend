@@ -13,8 +13,6 @@ import ModalUpdate from '../../Components/ModalUpdate/ModalUpdate';
 import { updateAccommodation } from '../../reducers/accommodations/accommodations.action';
 
 const UpdateAccommodation = () => {
-  console.log('entrando');
-
   const location = useLocation();
   const path = location.pathname;
   const id = path.split('/').at(-1);

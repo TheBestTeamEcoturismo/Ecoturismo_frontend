@@ -7,7 +7,7 @@ export async function newReservation({ dispatch, data }) {
   try {
     const showMessage = (message) => {
       dispatch({ type: 'SHOW_MESSAGE', payload: message });
-      setTimeout(() => dispatch({ type: 'CLEAR_MESSAGE' }), 3000);
+      setTimeout(() => dispatch({ type: 'CLEAR_MESSAGE' }), 2000);
     };
 
     if (!isEntryDateValid({ date: data.entryDate })) {
@@ -50,7 +50,7 @@ export async function removeReservation({ dispatch, id }) {
   try {
     const showMessage = (message) => {
       dispatch({ type: 'SHOW_MESSAGE', payload: message });
-      setTimeout(() => dispatch({ type: 'CLEAR_MESSAGE' }), 3000);
+      setTimeout(() => dispatch({ type: 'CLEAR_MESSAGE' }), 2000);
     };
     dispatch({ type: 'LOADING' });
     const response = await API({ method: 'DELETE', endpoint: `reservations/deleteReservation/${id}` });

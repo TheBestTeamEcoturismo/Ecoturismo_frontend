@@ -2,10 +2,10 @@ import { useContext, useEffect } from 'react';
 import './Profile.css';
 import useUserState from '../../hooks/useUserState';
 import { ReservationsContext } from '../../providers/reservations/Reservations';
-import Alert from '../../Components/alert/Alert';
 import { getUser } from '../../reducers/users/usersAction';
 import UserProfileCard from '../../components/userProfileCard/UserProfileCard';
 import UserBookingCard from '../../components/userBookingCard/UserbookingCard';
+import Alert from '../../components/alert/Alert';
 
 const Profile = () => {
   const { state, dispatch } = useUserState();

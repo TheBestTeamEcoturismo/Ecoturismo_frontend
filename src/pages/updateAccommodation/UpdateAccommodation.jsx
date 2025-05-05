@@ -1,5 +1,4 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import ModalUpdate from '../../components/modalUpdate/ModalUpdate';
 import './UpdateAccommodation.css';
 import { useContext } from 'react';
 import { AccommodationsContext } from '../../providers/accommodations/AccommodationsProvider';
@@ -9,8 +8,9 @@ import { stepFieldsAccommodations } from '../../utils/fieldsSteps';
 import Step1 from './Step1/Step1';
 import Step2 from './Step2/Step2';
 import Step3 from './Step3/Step3';
-import { updateAccommodation } from '../../reducers/accommodations/accommodations.action';
 import Alert from '../../components/alert/Alert';
+import ModalUpdate from '../../Components/ModalUpdate/ModalUpdate';
+import { updateAccommodation } from '../../Reducers/Accommodations/accommodations.action';
 
 const UpdateAccommodation = () => {
   console.log('entrando');

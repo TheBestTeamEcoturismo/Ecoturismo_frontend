@@ -17,6 +17,9 @@ import Owner from './pages/owner/Owner';
 import OwnerReservations from './pages/ownerReservation/OwnerReservation';
 import RegisterActivity from './pages/registerActivity/RegisterActivity';
 import RegisterAccommodation from './pages/registerAccommodation/RegisterAccommodation';
+import UpdateActivity from './pages/updateActivity/UpdateActivity';
+import UpdateAccommodation from './pages/updateAccommodation/UpdateAccommodation';
+import FilterBooking from './pages/filterBooking/FilterBooking';
 
 function App() {
   const { loading } = useLoadingState();
@@ -32,13 +35,17 @@ function App() {
         <Route path="/activities" element={<Activities />} />
         <Route path="/accommodations" element={<Accommodations />} />
         <Route path="/about" element={<About />} />
+        <Route path="/owner" element={<Owner />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/activity/:name/:id" element={<Activity />} />
         <Route path="/accommodation/:name/:id" element={<Accommodation />} />
         <Route path="/registerActivity" element={<RegisterActivity />} />
         <Route path="/registerAccommodation" element={<RegisterAccommodation />} />
-        <Route path="/owner" element={<Owner />} />
+        <Route path="/updateActivity/:id" element={<UpdateActivity />} />
+        <Route path="/updateAccommodation/:id" element={<UpdateAccommodation />} />
         <Route path="/ownerReservations" element={<OwnerReservations />} />
+        <Route path="/filterActivities" element={<FilterBooking />} />
+        <Route path="/filterAccommodations" element={<FilterBooking />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />

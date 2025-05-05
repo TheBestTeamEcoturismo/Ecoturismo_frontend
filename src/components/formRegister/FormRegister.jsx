@@ -16,8 +16,6 @@ const FormRegister = ({ navigate, dispatch }) => {
   } = useForm();
 
   async function onSubmit(data) {
-    console.log(data);
-
     data.image = file;
     await registerUser({ dispatch, data, navigate });
   }

@@ -12,7 +12,6 @@ const Activity = () => {
   const navigate = useNavigate();
   const { state } = useActivitiesState();
   const { state: reservationState, dispatch: reservationDispatch } = useReservationState();
-  console.log(reservationState);
 
   const { activity } = state;
 

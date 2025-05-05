@@ -10,7 +10,6 @@ import Alert from '../../components/alert/Alert';
 const Profile = () => {
   const { state, dispatch, dispatch: userDispatch } = useUserState();
   const { state: reservationState, dispatch: reservationDispatch } = useContext(ReservationsContext);
-  console.log(reservationState);
 
   useEffect(() => {
     async function user() {

@@ -34,7 +34,8 @@ export function reservationsReducer(state, action) {
       return {
         ...state,
         message: false,
-        error: false
+        error: false,
+        reservation: null
       };
     case 'CREATE_RESERVATION_ACTIVITY':
       return {

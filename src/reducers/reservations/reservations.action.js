@@ -5,11 +5,6 @@ import { isExitDateAfterEntry } from '../../utils/isExitDateAfterEntry';
 
 export async function newReservation({ dispatch, data }) {
   try {
-    const showMessage = (message) => {
-      dispatch({ type: 'SHOW_MESSAGE', payload: message });
-      setTimeout(() => dispatch({ type: 'CLEAR_MESSAGE' }), 2000);
-    };
-
     if (!isEntryDateValid({ date: data.entryDate })) {
       showMessage('La fecha no puede ser anterior al día de hoy');
       return;
@@ -30,7 +25,7 @@ export async function newReservation({ dispatch, data }) {
     const response = await API({ method: 'POST', isJson: true, body: data, endpoint: 'reservations/newReservation' });
 
     dispatch({ type: 'CREATE_RESERVATION_ACTIVITY', payload: response.reservation });
-    showMessage(response.message);
+    dispatch({ type: 'SHOW_MESSAGE', payload: response.message });
   } catch (error) {
     dispatch({ type: 'ERROR', payload: error });
   }
@@ -48,14 +43,9 @@ export async function getReservations({ dispatch, id }) {
 
 export async function removeReservation({ dispatch, id }) {
   try {
-    const showMessage = (message) => {
-      dispatch({ type: 'SHOW_MESSAGE', payload: message });
-      setTimeout(() => dispatch({ type: 'CLEAR_MESSAGE' }), 2000);
-    };
     dispatch({ type: 'LOADING' });
     const response = await API({ method: 'DELETE', endpoint: `reservations/deleteReservation/${id}` });
-
-    showMessage(response.message);
+    dispatch({ type: 'SHOW_MESSAGE', payload: response.message });
   } catch (error) {
     dispatch({ type: 'ERROR', payload: error });
   }

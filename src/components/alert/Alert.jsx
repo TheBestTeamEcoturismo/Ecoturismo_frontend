@@ -5,12 +5,12 @@ import { useNavigate } from 'react-router-dom';
 import useUserState from '../../hooks/useUserState';
 import { logout } from '../../reducers/users/usersAction';
 
-const Alert = ({ message }) => {
+const Alert = ({ message, dispatch }) => {
   const [showAlert, setShowAlert] = useState(true);
   const navigate = useNavigate();
-  const { dispatch } = useUserState();
+  const { dispatch: userDispatch } = useUserState();
   async function logOut() {
-    await logout({ dispatch });
+    await logout({ userDispatch });
   }
 
   useEffect(() => {
@@ -19,6 +19,7 @@ const Alert = ({ message }) => {
 
   function handleClose() {
     setShowAlert(false);
+    dispatch?.({ type: 'CLEAR_MESSAGE' });
     switch (message) {
       case 'Usuario eliminado correctamente':
         navigate('/');

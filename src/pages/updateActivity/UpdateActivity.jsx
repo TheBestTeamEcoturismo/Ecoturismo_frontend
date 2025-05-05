@@ -29,7 +29,7 @@ const UpdateActivity = () => {
 
   return (
     <div className="updateActivity">
-      {state.message && <Alert message={state.message} />}
+      {state.message && <Alert message={state.message} dispatch={dispatch} />}
       <ModalUpdate>
         <form onSubmit={handleSubmit(submit)}>
           <img onClick={() => navigate('/owner')} className="close" src="/icons/close.webp" alt="icon close" />

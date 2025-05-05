@@ -1,19 +1,17 @@
 import './Accommodation.css';
-
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-
 import GallerySlider from '../../components/gallerySlider/GallerySlider';
 import CardReservation from '../../components/cardReservation/CardReservation';
 import Alert from '../../components/alert/Alert';
-import useAccommodationState from '../../Hooks/useAccommodationsState';
 import useReservationState from '../../hooks/useReservationState';
+import useAccommodationState from '../../hooks/useAccommodationsState';
 
 const Accommodation = () => {
   const navigate = useNavigate();
   const { state } = useAccommodationState();
   const { accommodation } = state;
-  const { state: reservationState } = useReservationState();
+  const { state: reservationState, dispatch: reservationDispatch } = useReservationState();
 
   useEffect(() => {
     if (!accommodation) {
@@ -23,8 +21,8 @@ const Accommodation = () => {
 
   return (
     <main>
-      {reservationState.message && <Alert message={reservationState.message} />}
-      {reservationState.error && <Alert message={reservationState.error} />}
+      {reservationState.message && <Alert message={reservationState.message} dispatch={reservationDispatch} />}
+      {reservationState.error && <Alert message={reservationState.error} dispatch={reservationDispatch} />}
       {accommodation && (
         <div className="accommodation">
           <h2>{accommodation.name}</h2>

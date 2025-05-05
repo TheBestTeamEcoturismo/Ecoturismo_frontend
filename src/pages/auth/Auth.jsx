@@ -4,11 +4,11 @@ import Alert from '../../components/alert/Alert';
 import useUserState from '../../hooks/useUserState';
 
 const Auth = () => {
-  const { state } = useUserState();
+  const { state, dispatch } = useUserState();
 
   return (
     <main>
-      {state.error && <Alert message={state.error} />}
+      {state.error && <Alert message={state.error} dispatch={dispatch} />}
       <section className="content">{<FormAuth />}</section>
     </main>
   );

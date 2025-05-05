@@ -11,7 +11,9 @@ import CardReservation from '../../components/cardReservation/CardReservation';
 const Activity = () => {
   const navigate = useNavigate();
   const { state } = useActivitiesState();
-  const { state: reservationState } = useReservationState();
+  const { state: reservationState, dispatch: reservationDispatch } = useReservationState();
+  console.log(reservationState);
+
   const { activity } = state;
 
   useEffect(() => {
@@ -22,8 +24,8 @@ const Activity = () => {
 
   return (
     <main>
-      {reservationState.message && <Alert message={reservationState.message} />}
-      {reservationState.error && <Alert message={reservationState.error} />}
+      {reservationState.message && <Alert message={reservationState.message} dispatch={reservationDispatch} />}
+      {reservationState.error && <Alert message={reservationState.error} dispatch={reservationDispatch} />}
       {activity && (
         <div className="activity">
           <h3>{activity.name}</h3>

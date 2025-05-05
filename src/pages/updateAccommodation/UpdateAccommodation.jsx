@@ -10,7 +10,7 @@ import Step2 from './Step2/Step2';
 import Step3 from './Step3/Step3';
 import Alert from '../../components/alert/Alert';
 import ModalUpdate from '../../Components/ModalUpdate/ModalUpdate';
-import { updateAccommodation } from '../../Reducers/Accommodations/accommodations.action';
+import { updateAccommodation } from '../../reducers/accommodations/accommodations.action';
 
 const UpdateAccommodation = () => {
   console.log('entrando');
@@ -38,7 +38,7 @@ const UpdateAccommodation = () => {
 
   return (
     <div className="updateAccommodation">
-      {state.message && <Alert message={state.message} />}
+      {state.message && <Alert message={state.message} dispatch={dispatch} />}
       <ModalUpdate>
         <form action={handleSubmit(submit)}>
           <img onClick={() => navigate('/owner')} className="close" src="/icons/close.webp" alt="icon close" />

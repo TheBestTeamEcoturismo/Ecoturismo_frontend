@@ -73,8 +73,6 @@ export async function createActiviy({ dispatch, data }) {
     dispatch({ type: 'CREATE_ACTIVITY', payload: response.activity });
     dispatch({ type: 'SHOW_MESSAGE', payload: response.message });
   } catch (error) {
-    console.log(error);
-
     dispatch({ type: 'ERROR', payload: error });
   }
 }
@@ -103,7 +101,6 @@ export async function updateActivity({ dispatch, id, data }) {
     data.includes?.split(',').forEach((item) => formData.append('includes', item.trim()));
 
     const response = await API({ method: 'PUT', endpoint: `activities/updateActivity/${id}`, body: formData });
-    console.log(response);
 
     dispatch({ type: 'UPDATE_ACTIVITY', payload: response.activity });
     dispatch({ type: 'SHOW_MESSAGE', payload: response.message });

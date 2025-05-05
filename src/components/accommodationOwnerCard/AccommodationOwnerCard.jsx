@@ -15,8 +15,8 @@ const AccommodationOwnerCard = () => {
   }
   return (
     <div className="accommodationOwnerCard">
-      {state.error && <Alert message={state.error} />}
-      {state.message && <Alert message={state.message} />}
+      {state.error && <Alert message={state.error} dispatch={dispatch} />}
+      {state.message && <Alert message={state.message} dispatch={dispatch} />}
       <div className="accommodationOwnerCard__heading">
         <img src="/icons/casa-ecologica.webp" alt="icono" />
         <h3>Alojamientos</h3>

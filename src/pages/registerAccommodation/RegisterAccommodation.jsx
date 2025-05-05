@@ -9,7 +9,7 @@ import Step3 from './Step3/Step3';
 import useFormStep from '../../hooks/useFormStep';
 import { stepFieldsAccommodations } from '../../utils/fieldsSteps';
 import Alert from '../../components/alert/Alert';
-import { createAccommodation } from '../../Reducers/Accommodations/accommodations.action';
+import { createAccommodation } from '../../reducers/accommodations/accommodations.action';
 
 const RegisterAccommodation = () => {
   const { state, dispatch } = useContext(AccommodationsContext);
@@ -25,15 +25,15 @@ const RegisterAccommodation = () => {
 
   async function submit(data) {
     if (data.price <= 0) {
-      <Alert message="El precio no puede ser menor a 0€" />;
+      <Alert message="El precio no puede ser menor a 0€" dispatch={dispatch} />;
     }
     await createAccommodation({ dispatch, data });
   }
 
   return (
     <main>
-      {state.message && <Alert message={state.message} />}
-      {state.error && <Alert message={state.error} />}
+      {state.message && <Alert message={state.message} dispatch={dispatch} />}
+      {state.error && <Alert message={state.error} dispatch={dispatch} />}
       <section className="register__accommodation">
         <h2>Registrar Nuevo Alojamiento</h2>
         <div className="form__container--accommodation">

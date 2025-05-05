@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router-dom';
-import Button from '../Button/Button';
 import './ActivityOwnerCard.css';
 import useActivitiesState from '../../hooks/useActivitiesState';
-import EditableItemCard from '../EditableItemCard/EditableItemCard';
-import Alert from '../Alert/Alert';
+import Alert from '../alert/Alert';
+import Button from '../button/Button';
+import EditableItemCard from '../editableItemCard/EditableItemCard';
 
 const ActivityOwnerCard = () => {
   const { state, dispatch } = useActivitiesState();
@@ -16,8 +16,8 @@ const ActivityOwnerCard = () => {
 
   return (
     <div className="activityOwnerCard">
-      {state.error && <Alert message={state.error} />}
-      {state.message && <Alert message={state.message} />}
+      {state.error && <Alert message={state.error} dispatch={dispatch} />}
+      {state.message && <Alert message={state.message} dispatch={dispatch} />}
       <div className="activityOwnerCard__heading">
         <img src="/icons/activismo-ecologico.webp" alt="icono" />
         <h3>Actividades</h3>

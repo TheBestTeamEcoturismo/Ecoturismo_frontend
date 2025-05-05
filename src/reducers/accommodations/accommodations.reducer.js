@@ -84,6 +84,12 @@ export function accommodationReducer(state, action) {
         ...state,
         message: action.payload
       };
+    case 'CLEAR_MESSAGE':
+      return {
+        ...state,
+        message: false,
+        error: false
+      };
     default:
       return { ...state };
   }

@@ -8,8 +8,9 @@ import UserBookingCard from '../../components/userBookingCard/UserbookingCard';
 import Alert from '../../components/alert/Alert';
 
 const Profile = () => {
-  const { state, dispatch } = useUserState();
-  const { state: reservationState } = useContext(ReservationsContext);
+  const { state, dispatch, dispatch: userDispatch } = useUserState();
+  const { state: reservationState, dispatch: reservationDispatch } = useContext(ReservationsContext);
+  console.log(reservationState);
 
   useEffect(() => {
     async function user() {
@@ -20,9 +21,9 @@ const Profile = () => {
 
   return (
     <main>
-      {state.message && <Alert message={state.message} />}
-      {state.error && <Alert message={state.error} />}
-      {reservationState.message && <Alert message={reservationState.message} />}
+      {state.message && <Alert message={state.message} dispatch={userDispatch} />}
+      {state.error && <Alert message={state.error} dispatch={userDispatch} />}
+      {reservationState.message && <Alert message={reservationState.message} dispatch={reservationDispatch} />}
       <section className="profile">
         <h2>Mi Perfil</h2>
         <div>

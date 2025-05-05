@@ -28,6 +28,12 @@ export function activitiesReducer(state, action) {
         ...state,
         message: action.payload
       };
+    case 'CLEAR_MESSAGE':
+      return {
+        ...state,
+        message: false,
+        error: false
+      };
     case 'GET_ACTIVITIES':
       return {
         ...state,

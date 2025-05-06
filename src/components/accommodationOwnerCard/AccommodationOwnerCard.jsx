@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 import Button from '../button/Button';
-import EditableItemCard from '../editableItemCard/EditableItemCard';
 import './AccommodationOwnerCard.css';
-import useAccommodationState from '../../hooks/useAccommodationsState';
 import Alert from '../alert/Alert';
+import useAccommodationState from '../../Hooks/useAccommodationsState';
+import EditableItemCard from '../editableItemCard/EditableItemCard';
 
 const AccommodationOwnerCard = () => {
   const { state, dispatch } = useAccommodationState();

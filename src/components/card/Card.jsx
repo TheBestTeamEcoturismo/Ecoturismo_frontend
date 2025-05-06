@@ -1,11 +1,9 @@
 import './Card.css';
-import { getActivity } from '../../Reducers/Activities/activities.action';
 import { useContext } from 'react';
 import { ActivitiesContext } from '../../Providers/Activities/ActivitiesProvider';
-import { getAccommodation } from '../../Reducers/Accommodations/accommodations.action';
-import { AccommodationsContext } from '../../Providers/Accommodations/AccommodationsProvider';
 import { useCardDetail } from '../../Hooks/useCardDetail';
-import Button from '../Button/Button';
+import Button from '../button/Button';
+import { AccommodationsContext } from '../../providers/accommodations/AccommodationsProvider';
 
 const Card = ({ src, title, btnText, id, description, ubi, type, name }) => {
   const { dispatch: activitiesDispatch } = useContext(ActivitiesContext);

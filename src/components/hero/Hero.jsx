@@ -1,4 +1,4 @@
-import Filter from '../Filter/Filter';
+import Filter from '../filter/Filter';
 import './Hero.css';
 
 const Hero = () => {

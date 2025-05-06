@@ -1,6 +1,5 @@
 import { useContext } from 'react';
-
-import { ActivitiesContext } from '../providers/activities/ActivitiesProvider';
+import { ActivitiesContext } from '../Providers/Activities/ActivitiesProvider';
 
 function useActivitiesState() {
   const { state, dispatch } = useContext(ActivitiesContext);

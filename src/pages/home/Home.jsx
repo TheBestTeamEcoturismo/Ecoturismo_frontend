@@ -1,12 +1,11 @@
 import { useEffect } from 'react';
-
 import useActivitiesState from '../../Hooks/useActivitiesState';
 import './Home.css';
-import { getRandomActivities } from '../../Reducers/Activities/activities.action';
 import useAccommodationState from '../../Hooks/useAccommodationsState';
-import { getRandomAccommodations } from '../../Reducers/Accommodations/accommodations.action';
 import RandomBookings from '../../components/randomBookings/RandomBookings';
 import Hero from '../../components/hero/Hero';
+import { getRandomActivities } from '../../reducers/activities/activities.action';
+import { getRandomAccommodations } from '../../reducers/accommodations/accommodations.action';
 
 const Home = () => {
   const { state: activitiesState, dispatch } = useActivitiesState();

@@ -2,7 +2,7 @@ import { useContext, useState } from 'react';
 import './Header.css';
 import Explore from '../Explore/Explore';
 import Menu from '../Menu/Menu';
-import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { UsersContext } from '../../providers/users/UsersProvider';
 import { logout } from '../../reducers/users/usersAction';
 

@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import ConfirmModal from '../confirmModal/ConfirmModal';
+
 import './EditableItemCard.css';
 import { deleteActivity } from '../../reducers/activities/activities.action';
 import { deleteAccommodation } from '../../reducers/accommodations/accommodations.action';
+import ConfirmModal from '../confirmModal/ConfirmModal';
 
 const EditableItemCard = ({ item, navigate, type, dispatch }) => {
   const [showConfirm, setShowConfirm] = useState(false);

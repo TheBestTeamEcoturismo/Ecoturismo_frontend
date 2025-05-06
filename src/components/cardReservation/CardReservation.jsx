@@ -3,8 +3,8 @@ import './CardReservation.css';
 import { useContext } from 'react';
 import { newReservation } from '../../Reducers/Reservations/reservations.action';
 import Button from '../button/Button';
-import useUserState from '../../hooks/UseUserState';
 import { ReservationsContext } from '../../providers/reservations/Reservations';
+import useUserState from '../../hooks/useUserState';
 
 const CardReservation = ({ type, item, title, text }) => {
   const { dispatch: reservationDispatch } = useContext(ReservationsContext);

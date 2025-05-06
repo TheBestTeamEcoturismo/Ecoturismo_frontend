@@ -2,7 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/header/Header';
 import Loading from './components/loading/Loading';
-import useLoadingState from './hooks/useLoadingState';
+
 import Auth from './pages/auth/Auth';
 import Ecoturismo from './pages/ecoturismo/Ecoturismo';
 import Activities from './pages/activities/Activities';
@@ -20,6 +20,7 @@ import RegisterAccommodation from './pages/registerAccommodation/RegisterAccommo
 import UpdateActivity from './pages/updateActivity/UpdateActivity';
 import UpdateAccommodation from './pages/updateAccommodation/UpdateAccommodation';
 import FilterBooking from './pages/filterBooking/FilterBooking';
+import useLoadingState from './hooks/useLoadingState';
 
 function App() {
   const { loading } = useLoadingState();

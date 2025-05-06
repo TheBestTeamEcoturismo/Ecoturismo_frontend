@@ -4,13 +4,13 @@ import { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { stepFieldsActivities } from '../../utils/fieldsSteps';
 import ModalUpdate from '../../Components/ModalUpdate/ModalUpdate';
-import { updateActivity } from '../../Reducers/Activities/activities.action';
 import Alert from '../../components/alert/Alert';
 import Step1 from './step1/Step1';
 import Step2 from './step2/Step2';
 import Step3 from './step3/Step3';
 import useFormStep from '../../hooks/useFormStep';
-import { ActivitiesContext } from '../../providers/activities/ActivitiesProvider';
+import { updateActivity } from '../../reducers/activities/activities.action';
+import { ActivitiesContext } from '../../Providers/Activities/ActivitiesProvider';
 
 const UpdateActivity = () => {
   const location = useLocation();

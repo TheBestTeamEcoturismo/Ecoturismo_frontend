@@ -1,7 +1,7 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import './Menu.css';
 import { logout } from '../../reducers/users/usersAction';
-import useUserState from '../../hooks/UseUserState';
+import useUserState from '../../hooks/useUserState';
 
 const Menu = () => {
   const navigate = useNavigate();

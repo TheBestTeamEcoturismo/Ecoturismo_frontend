@@ -2,10 +2,8 @@ import './FormAuth.css';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import FormLogin from '../formLogin/FormLogin';
-import { login } from '../../reducers/users/usersAction';
 import { UsersContext } from '../../providers/users/UsersProvider';
 import FormRegister from '../formRegister/FormRegister';
-import Alert from '../alert/Alert';
 
 const FormAuth = () => {
   const { dispatch } = useContext(UsersContext);

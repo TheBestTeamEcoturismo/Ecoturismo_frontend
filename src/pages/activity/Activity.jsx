@@ -1,12 +1,11 @@
 import './Activity.css';
-
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Alert from '../../components/alert/Alert';
 import GallerySlider from '../../components/gallerySlider/GallerySlider';
-import useActivitiesState from '../../hooks/useActivitiesState';
 import useReservationState from '../../hooks/useReservationState';
 import CardReservation from '../../components/cardReservation/CardReservation';
+import useActivitiesState from '../../Hooks/useActivitiesState';
 
 const Activity = () => {
   const navigate = useNavigate();

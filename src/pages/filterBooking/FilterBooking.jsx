@@ -1,8 +1,8 @@
 import { useLocation } from 'react-router-dom';
 import './FilterBooking.css';
 import useAccommodationState from '../../Hooks/useAccommodationsState';
-import useActivitiesState from '../../hooks/useActivitiesState';
-import ListingCards from '../../components/listingCards/ListingCards';
+import useActivitiesState from '../../Hooks/useActivitiesState';
+import ListingCards from '../../Components/ListingCards/ListingCards';
 
 const FilterBooking = () => {
   const location = useLocation();

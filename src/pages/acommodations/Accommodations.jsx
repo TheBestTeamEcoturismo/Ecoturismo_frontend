@@ -1,7 +1,7 @@
 import { useContext, useEffect } from 'react';
-import { AccommodationsContext } from '../../Providers/Accommodations/AccommodationsProvider';
 import ListingCards from '../../Components/ListingCards/ListingCards';
-import { getAccommodations } from '../../Reducers/Accommodations/accommodations.action';
+import { AccommodationsContext } from '../../providers/accommodations/AccommodationsProvider';
+import { getAccommodations } from '../../reducers/accommodations/accommodations.action';
 
 const Accommodations = () => {
   const { state, dispatch } = useContext(AccommodationsContext);

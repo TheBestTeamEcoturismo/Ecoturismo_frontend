@@ -1,14 +1,14 @@
 import './Owner.css';
 import { useEffect } from 'react';
-import { getAccommodationsByAuthor } from '../../Reducers/Accommodations/accommodations.action';
-import { getActivitiesByAuthor } from '../../Reducers/Activities/activities.action';
 import { useNavigate } from 'react-router-dom';
 import ActivityOwnerCard from '../../Components/ActivityOwnerCard/ActivityOwnerCard';
 import AccommodationOwnerCard from '../../components/accommodationOwnerCard/AccommodationOwnerCard';
-import Button from '../../Components/Button/Button';
-import useActivitiesState from '../../hooks/useActivitiesState';
-import useAccommodationState from '../../hooks/useAccommodationsState';
 import useUserState from '../../hooks/useUserState';
+import useAccommodationState from '../../Hooks/useAccommodationsState';
+import useActivitiesState from '../../Hooks/useActivitiesState';
+import Button from '../../components/button/Button';
+import { getActivitiesByAuthor } from '../../reducers/activities/activities.action';
+import { getAccommodationsByAuthor } from '../../reducers/accommodations/accommodations.action';
 
 const Owner = () => {
   const { dispatch: activitiesDispatch } = useActivitiesState();

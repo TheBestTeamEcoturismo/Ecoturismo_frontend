@@ -4,8 +4,8 @@ import './UserCardProfile.css';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import ConfirmModal from '../confirmModal/ConfirmModal';
-import useImagePreview from '../../hooks/useImagePreview';
 import Button from '../button/Button';
+import useImagePreview from '../../Hooks/UseImagePreview';
 
 const UserProfileCard = ({ user, dispatch }) => {
   const [showConfirm, setShowConfirm] = useState(false);

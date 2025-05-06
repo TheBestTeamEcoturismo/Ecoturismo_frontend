@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import { UsersContext } from '../providers/users/UsersProvider';
-import { ActivitiesContext } from '../providers/activities/ActivitiesProvider';
-import { AccommodationsContext } from '../providers/accommodations/AccommodationsProvider';
 import { ReservationsContext } from '../providers/reservations/Reservations';
+import { ActivitiesContext } from '../Providers/Activities/ActivitiesProvider';
+import { AccommodationsContext } from '../Providers/Accommodations/AccommodationsProvider';
 
 function useLoadingState() {
   const { state: userState } = useContext(UsersContext);

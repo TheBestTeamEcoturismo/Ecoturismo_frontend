@@ -2,7 +2,6 @@ import './MyCalendar.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Calendar from 'react-calendar';
-import './MyCalendar.css';
 
 const MyCalendar = ({ reservations }) => {
   const [value, setValue] = useState(null);

@@ -1,7 +1,7 @@
 import './Card.css';
 import { useContext } from 'react';
-import { ActivitiesContext } from '../../Providers/Activities/ActivitiesProvider';
-import { useCardDetail } from '../../Hooks/useCardDetail';
+import { ActivitiesContext } from '../../providers/activities/ActivitiesProvider';
+import { useCardDetail } from '../../hooks/useCardDetail';
 import Button from '../button/Button';
 import { AccommodationsContext } from '../../providers/accommodations/AccommodationsProvider';
 

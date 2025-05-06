@@ -1,5 +1,5 @@
 import { useContext, useEffect } from 'react';
-import ListingCards from '../../Components/ListingCards/ListingCards';
+import ListingCards from '../../components/listingCards/ListingCards';
 import { AccommodationsContext } from '../../providers/accommodations/AccommodationsProvider';
 import { getAccommodations } from '../../reducers/accommodations/accommodations.action';
 

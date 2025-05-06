@@ -5,11 +5,11 @@ import { AccommodationsContext } from '../../providers/accommodations/Accommodat
 import { useForm } from 'react-hook-form';
 import useFormStep from '../../hooks/useFormStep';
 import { stepFieldsAccommodations } from '../../utils/fieldsSteps';
-import Step1 from './Step1/Step1';
-import Step2 from './Step2/Step2';
-import Step3 from './Step3/Step3';
+import Step1 from './step1/Step1';
+import Step2 from './step2/Step2';
+import Step3 from './step3/Step3';
 import Alert from '../../components/alert/Alert';
-import ModalUpdate from '../../Components/ModalUpdate/ModalUpdate';
+import ModalUpdate from '../../components/modalUpdate/ModalUpdate';
 import { updateAccommodation } from '../../reducers/accommodations/accommodations.action';
 
 const UpdateAccommodation = () => {

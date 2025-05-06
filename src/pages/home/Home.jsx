@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import useActivitiesState from '../../Hooks/useActivitiesState';
+import useActivitiesState from '../../hooks/useActivitiesState';
 import './Home.css';
-import useAccommodationState from '../../Hooks/useAccommodationsState';
+import useAccommodationState from '../../hooks/useAccommodationsState';
 import RandomBookings from '../../components/randomBookings/RandomBookings';
 import Hero from '../../components/hero/Hero';
 import { getRandomActivities } from '../../reducers/activities/activities.action';

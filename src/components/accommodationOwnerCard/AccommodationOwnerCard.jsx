@@ -2,8 +2,8 @@ import { useNavigate } from 'react-router-dom';
 import Button from '../button/Button';
 import './AccommodationOwnerCard.css';
 import Alert from '../alert/Alert';
-import useAccommodationState from '../../Hooks/useAccommodationsState';
 import EditableItemCard from '../editableItemCard/EditableItemCard';
+import useAccommodationState from '../../hooks/useAccommodationsState';
 
 const AccommodationOwnerCard = () => {
   const { state, dispatch } = useAccommodationState();

@@ -1,7 +1,7 @@
 import Button from '../button/Button';
 import './FormRegister.css';
-import useTogglePassword from '../../hooks/UseTogglePassword';
-import useImagePreview from '../../Hooks/UseImagePreview';
+import useTogglePassword from '../../hooks/useTogglePassword';
+import useImagePreview from '../../hooks/useImagePreview';
 import { registerUser } from '../../reducers/users/usersAction';
 import { useForm } from 'react-hook-form';
 

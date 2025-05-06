@@ -8,7 +8,7 @@ import Step3 from './step3/Step3';
 import useFormStep from '../../hooks/useFormStep';
 import { stepFieldsActivities } from '../../utils/fieldsSteps';
 import Alert from '../../components/alert/Alert';
-import { ActivitiesContext } from '../../Providers/Activities/ActivitiesProvider';
+import { ActivitiesContext } from '../../providers/activities/ActivitiesProvider';
 import { createActiviy } from '../../reducers/activities/activities.action';
 
 const RegisterActivity = () => {

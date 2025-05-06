@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import './OwnerReservation.css';
-import { getReservations } from '../../Reducers/Reservations/reservations.action';
+import { getReservations } from '../../reducers/reservations/reservations.action';
 import ReservationSwitcher from '../../components/reservationsSwitcher/ReservationsSwitcher';
 import useUserState from '../../hooks/useUserState';
 import BookingCalendar from '../../components/bookingCalendar/BookingCalendar';

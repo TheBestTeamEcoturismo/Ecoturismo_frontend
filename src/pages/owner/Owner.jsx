@@ -1,11 +1,11 @@
 import './Owner.css';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import ActivityOwnerCard from '../../Components/ActivityOwnerCard/ActivityOwnerCard';
+import ActivityOwnerCard from '../../components/activityOwnerCard/ActivityOwnerCard';
 import AccommodationOwnerCard from '../../components/accommodationOwnerCard/AccommodationOwnerCard';
 import useUserState from '../../hooks/useUserState';
-import useAccommodationState from '../../Hooks/useAccommodationsState';
-import useActivitiesState from '../../Hooks/useActivitiesState';
+import useAccommodationState from '../../hooks/useAccommodationsState';
+import useActivitiesState from '../../hooks/useActivitiesState';
 import Button from '../../components/button/Button';
 import { getActivitiesByAuthor } from '../../reducers/activities/activities.action';
 import { getAccommodationsByAuthor } from '../../reducers/accommodations/accommodations.action';

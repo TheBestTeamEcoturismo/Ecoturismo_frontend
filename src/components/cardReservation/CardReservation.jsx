@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 import './CardReservation.css';
 import { useContext } from 'react';
-import { newReservation } from '../../Reducers/Reservations/reservations.action';
+import { newReservation } from '../../reducers/reservations/reservations.action';
 import Button from '../button/Button';
 import { ReservationsContext } from '../../providers/reservations/Reservations';
 import useUserState from '../../hooks/useUserState';

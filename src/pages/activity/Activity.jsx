@@ -5,7 +5,7 @@ import Alert from '../../components/alert/Alert';
 import GallerySlider from '../../components/gallerySlider/GallerySlider';
 import useReservationState from '../../hooks/useReservationState';
 import CardReservation from '../../components/cardReservation/CardReservation';
-import useActivitiesState from '../../Hooks/useActivitiesState';
+import useActivitiesState from '../../hooks/useActivitiesState';
 
 const Activity = () => {
   const navigate = useNavigate();

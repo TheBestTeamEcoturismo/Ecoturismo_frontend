@@ -5,7 +5,7 @@ import GallerySlider from '../../components/gallerySlider/GallerySlider';
 import CardReservation from '../../components/cardReservation/CardReservation';
 import Alert from '../../components/alert/Alert';
 import useReservationState from '../../hooks/useReservationState';
-import useAccommodationState from '../../Hooks/useAccommodationsState';
+import useAccommodationState from '../../hooks/useAccommodationsState';
 
 const Accommodation = () => {
   const navigate = useNavigate();

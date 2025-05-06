@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { UsersContext } from '../providers/users/UsersProvider';
 import { ReservationsContext } from '../providers/reservations/Reservations';
-import { ActivitiesContext } from '../Providers/Activities/ActivitiesProvider';
+import { ActivitiesContext } from '../providers/activities/ActivitiesProvider';
 import { AccommodationsContext } from '../providers/accommodations/AccommodationsProvider';
 
 function useLoadingState() {

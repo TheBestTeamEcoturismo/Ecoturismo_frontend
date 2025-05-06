@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import './ReservationUserCard.css';
 import { ReservationsContext } from '../../providers/reservations/Reservations';
-import { removeReservation } from '../../Reducers/Reservations/reservations.action';
+import { removeReservation } from '../../reducers/reservations/reservations.action';
 
 const ReservationUserCard = ({ isActivity, item }) => {
   const { dispatch } = useContext(ReservationsContext);

@@ -1,8 +1,8 @@
 import { useForm } from 'react-hook-form';
 import './Filter.css';
 import { useNavigate } from 'react-router-dom';
-import useActivitiesState from '../../Hooks/useActivitiesState';
-import useAccommodationState from '../../Hooks/useAccommodationsState';
+import useActivitiesState from '../../hooks/useActivitiesState';
+import useAccommodationState from '../../hooks/useAccommodationsState';
 import Button from '../button/Button';
 import { filterActivities } from '../../reducers/activities/activities.action';
 import { filterAccommodations } from '../../reducers/accommodations/accommodations.action';

@@ -3,14 +3,14 @@ import './UpdateActivity.css';
 import { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { stepFieldsActivities } from '../../utils/fieldsSteps';
-import ModalUpdate from '../../Components/ModalUpdate/ModalUpdate';
+import ModalUpdate from '../../components/modalUpdate/ModalUpdate';
 import Alert from '../../components/alert/Alert';
 import Step1 from './step1/Step1';
 import Step2 from './step2/Step2';
 import Step3 from './step3/Step3';
 import useFormStep from '../../hooks/useFormStep';
 import { updateActivity } from '../../reducers/activities/activities.action';
-import { ActivitiesContext } from '../../Providers/Activities/ActivitiesProvider';
+import { ActivitiesContext } from '../../providers/activities/ActivitiesProvider';
 
 const UpdateActivity = () => {
   const location = useLocation();

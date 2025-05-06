@@ -2,7 +2,6 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/header/Header';
 import Loading from './components/loading/Loading';
-
 import Auth from './pages/auth/Auth';
 import Ecoturismo from './pages/ecoturismo/Ecoturismo';
 import Activities from './pages/activities/Activities';

@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
 import './Header.css';
 import Explore from '../explore/Explore';
-import Menu from '../Menu/Menu';
+import Menu from '../menu/Menu';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { UsersContext } from '../../providers/users/UsersProvider';
 import { logout } from '../../reducers/users/usersAction';

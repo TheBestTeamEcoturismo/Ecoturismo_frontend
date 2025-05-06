@@ -4,8 +4,8 @@ import App from './App.jsx';
 import { BrowserRouter } from 'react-router-dom';
 import { UsersProvider } from './providers/users/UsersProvider.jsx';
 import ReservationsProvider from './providers/reservations/Reservations.jsx';
-import ActivitiesProvider from './Providers/Activities/ActivitiesProvider.jsx';
 import AccommodationsProvider from './providers/accommodations/AccommodationsProvider.jsx';
+import ActivitiesProvider from './providers/activities/ActivitiesProvider.jsx';
 
 createRoot(document.querySelector('#root')).render(
   <BrowserRouter>

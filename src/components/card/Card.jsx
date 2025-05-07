@@ -2,6 +2,8 @@ import './Card.css';
 import { useContext } from 'react';
 import { ActivitiesContext } from '../../providers/activities/ActivitiesProvider';
 import { useCardDetail } from '../../hooks/useCardDetail';
+import { getActivity } from '../../reducers/activities/activities.action';
+import { getAccommodation } from '../../reducers/accommodations/accommodations.action';
 import Button from '../button/Button';
 import { AccommodationsContext } from '../../providers/accommodations/AccommodationsProvider';
 

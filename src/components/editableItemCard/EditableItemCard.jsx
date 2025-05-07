@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import './EditableItemCard.css';
 import { deleteActivity } from '../../reducers/activities/activities.action';
 import { deleteAccommodation } from '../../reducers/accommodations/accommodations.action';

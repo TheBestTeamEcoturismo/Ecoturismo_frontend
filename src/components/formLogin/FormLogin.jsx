@@ -1,7 +1,7 @@
 import './FormLogin.css';
 import { useForm } from 'react-hook-form';
 import Button from '../button/Button';
-import useTogglePassword from '../../hooks/UseTogglePassword';
+import useTogglePassword from '../../hooks/useTogglePassword';
 import { login } from '../../reducers/users/usersAction';
 
 const FormLogin = ({ dispatch, navigate }) => {

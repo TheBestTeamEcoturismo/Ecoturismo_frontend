@@ -6,12 +6,12 @@ import { isExitDateAfterEntry } from '../../utils/isExitDateAfterEntry';
 export async function newReservation({ dispatch, data }) {
   try {
     if (!isEntryDateValid({ date: data.entryDate })) {
-      showMessage('La fecha no puede ser anterior al día de hoy');
+      dispatch({ type: 'SHOW_MESSAGE', payload: 'La fecha no puede ser anterior al día de hoy' });
       return;
     }
 
     if (data.exitDate && !isExitDateAfterEntry({ entryDate: data.entryDate, exitDate: data.exitDate })) {
-      showMessage('La fecha de salida no puede ser anterior a la de entrada');
+      dispatch({ type: 'SHOW_MESSAGE', payload: 'La fecha de salida no puede ser anterior a la de entrada' });
       return;
     }
 

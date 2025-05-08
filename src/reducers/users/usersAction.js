@@ -23,7 +23,6 @@ export async function login({ dispatch, body, navigate }) {
 }
 
 export async function logout({ dispatch }) {
-  dispatch({ type: 'LOADING' });
   localStorage.removeItem('user');
   const response = await API({ method: 'POST', endpoint: 'users/logout' });
   dispatch({ type: 'LOGOUT' });

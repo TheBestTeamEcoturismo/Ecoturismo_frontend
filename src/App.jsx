@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 import Header from './components/header/Header';
 import Loading from './components/loading/Loading';
@@ -20,6 +20,17 @@ import UpdateActivity from './pages/updateActivity/UpdateActivity';
 import UpdateAccommodation from './pages/updateAccommodation/UpdateAccommodation';
 import FilterBooking from './pages/filterBooking/FilterBooking';
 import useLoadingState from './hooks/useLoadingState';
+import { useEffect } from 'react';
+
+function ScrollToTopOnRouteChange() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   const { loading } = useLoadingState();
@@ -27,6 +38,7 @@ function App() {
     <>
       {loading && <Loading />}
       <Header />
+      <ScrollToTopOnRouteChange />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Auth />} />

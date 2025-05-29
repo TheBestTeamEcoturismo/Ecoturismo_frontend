@@ -34,7 +34,7 @@ const Step1 = ({ register, errors }) => {
         {errors.ubi && <p className="form__error">{errors.ubi.message}</p>}
       </div>
       <div>
-        <label htmlFor="price">Precio por noche</label>
+        <label htmlFor="price">Precio por noche en euros</label>
         <input type="number" name="price" id="price" min="1" {...register('price', { required: 'El precio es requerido' })}></input>
         {errors.price && <p className="form__error">{errors.price.message}</p>}
       </div>

@@ -11,12 +11,12 @@ const Step2 = ({ register, errors, setValue, getValues }) => {
         <p>Todos los campos son obligatorios</p>
       </div>
       <div>
-        <label htmlFor="duration">Duración</label>
+        <label htmlFor="duration">Duración en horas</label>
         <input id="duration" type="number" min="1" {...register('duration', { required: 'La duración es requerida' })} />
         {errors.duration && <p className="form__error">{errors.duration.message}</p>}
       </div>
       <div>
-        <label htmlFor="price">Precio por persona</label>
+        <label htmlFor="price">Precio por persona en euros</label>
         <input id="price" type="number" min="1" {...register('price', { required: 'El precio es requerido' })} />
         {errors.price && <p className="form__error">{errors.price.message}</p>}
       </div>

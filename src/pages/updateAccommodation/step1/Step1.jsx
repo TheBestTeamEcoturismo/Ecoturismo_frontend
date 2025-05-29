@@ -26,7 +26,7 @@ const Step1 = ({ register, accommodation }) => {
         <input type="text" name="ubi" id="ubi" placeholder={accommodation.ubi} {...register('ubi')}></input>
       </div>
       <div>
-        <label htmlFor="price">Precio por noche</label>
+        <label htmlFor="price">Precio por noche en euros</label>
         <input type="number" name="price" id="price" min="1" placeholder={accommodation.price} {...register('price')}></input>
       </div>
       <div>

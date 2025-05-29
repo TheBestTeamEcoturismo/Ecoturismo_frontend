@@ -6,11 +6,11 @@ const Step2 = ({ register, getValues, setValue, activity }) => {
   return (
     <div className="step">
       <div>
-        <label htmlFor="duration">Duración</label>
+        <label htmlFor="duration">Duración en horas</label>
         <input placeholder={activity.duration} id="duration" type="number" min="1" {...register('duration')} />
       </div>
       <div>
-        <label htmlFor="price">Precio por persona</label>
+        <label htmlFor="price">Precio por persona en euros</label>
         <input placeholder={activity.price} id="price" type="number" min="1" {...register('price')} />
       </div>
       <div>

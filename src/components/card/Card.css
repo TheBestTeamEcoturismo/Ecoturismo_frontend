@@ -24,6 +24,13 @@
   padding: 0;
 }
 
+.pCardDescription {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
 .card > div > img {
   width: 100%;
   height: 100%;

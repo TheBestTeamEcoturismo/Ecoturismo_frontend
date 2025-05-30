@@ -18,7 +18,7 @@ const Card = ({ src, title, btnText, id, description, ubi, type, name }) => {
       </div>
       <h4>{title}</h4>
       <p className="pCard">{ubi}</p>
-      <p className="pCard">{description}</p>
+      <p className="pCardDescription">{description}</p>
 
       <Button fnc={() => getCardDetail({ id, name: name })} text={btnText} />
     </div>
